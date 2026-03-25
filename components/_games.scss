@@ -1,0 +1,126 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.games {
+  background: url('../img/background_games.png') no-repeat center center / cover;
+  padding: 80px 20px 120px;
+
+  @include mobile {
+    padding: 60px 20px;
+  }
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap-large;
+
+    @include mobile {
+      gap: 48px;
+    }
+  }
+
+  &__title {
+    @include section-title;
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-small;
+    width: 100%;
+  }
+
+  &__card {
+    background: $white;
+    border-radius: $border-radius-card;
+    overflow: hidden;
+
+    @include desktop {
+      &:nth-child(even) &-inner {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__card-inner {
+    display: flex;
+    align-items: stretch;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__card-text {
+    flex: 1;
+    padding: 48px;
+
+    @include mobile {
+      padding: 32px;
+      order: 2;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__card-title {
+    font-family: $font-family;
+    font-weight: $font-bold;
+    font-size: $h3-size;
+    line-height: $h3-lineheight;
+    color: $dark-text;
+    margin-bottom: $gap-extra-small;
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  &__card-description {
+    font-family: $font-family;
+    font-weight: $font-regular;
+    font-size: $regular-text-size;
+    line-height: $text-lineheight;
+    color: $dark-text;
+    margin-bottom: 36px;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__card-button {
+    @include button-style;
+    width: auto;
+    min-width: $button-width;
+    align-self: flex-start;
+  }
+
+  &__card-image {
+    flex: 1;
+    background: #f0f0f0;
+
+    @include mobile {
+      order: 1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: $border-radius-card;
+
+      @include mobile {
+        border-radius: $border-radius-card $border-radius-card 0 0;
+      }
+    }
+  }
+}
