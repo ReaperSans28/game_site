@@ -9,7 +9,6 @@
 
   @include mobile {
     padding: 80px 20px;
-    min-height: auto;
   }
 
   @include desktop {
@@ -24,6 +23,8 @@
 
     @include mobile {
       gap: 32px;
+      margin: 0 auto;
+      text-align: center;
     }
   }
 
@@ -60,5 +61,9 @@
     @include button-style;
     width: auto;
     min-width: $button-width;
+
+    @include mobile {
+      align-self: center;
+    }
   }
 }

@@ -35,7 +35,6 @@ a {
 @media (max-width: 768px) {
   .welcome {
     padding: 80px 20px;
-    min-height: auto;
   }
 }
 @media (min-width: 769px) {
@@ -52,6 +51,8 @@ a {
 @media (max-width: 768px) {
   .welcome__content {
     gap: 32px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 .welcome__title {
@@ -109,6 +110,11 @@ a {
   width: auto;
   min-width: 247px;
 }
+@media (max-width: 768px) {
+  .welcome__button {
+    align-self: center;
+  }
+}
 
 .about {
   background: url("../img/background_about_games.png") no-repeat center center/cover;
@@ -116,7 +122,7 @@ a {
 }
 @media (max-width: 768px) {
   .about {
-    padding: 60px 20px;
+    display: none;
   }
 }
 .about__container {
