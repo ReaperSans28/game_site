@@ -599,6 +599,36 @@ a {
   margin-top: 16px;
 }
 
+.hw-task {
+  gap: 16px;
+}
+.hw-task__heading, .hw-task__change-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #202027;
+}
+.hw-task__paragraph, .hw-task__plain {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #202027;
+}
+@media (max-width: 768px) {
+  .hw-task__paragraph, .hw-task__plain {
+    font-size: 18px;
+  }
+}
+.hw-task .description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #202027;
+}
+@media (max-width: 768px) {
+  .hw-task .description {
+    font-size: 18px;
+  }
+}
+
 .footer {
   background-color: #bded35;
   height: 150px;
