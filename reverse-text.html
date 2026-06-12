@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Переверни текст | Мини-игры</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="game-page">
+        <div class="game-page__container">
+            <a href="index.html#game-3" class="game-page__back">← Назад к играм</a>
+
+            <div class="game-page__card">
+                <h1 class="game-page__title">Переверни текст</h1>
+                <p class="game-page__description">
+                    Введите любую фразу — программа покажет её задом наперёд.
+                </p>
+
+                <form class="game-page__form game-page__form--column">
+                    <textarea
+                        class="game-page__textarea"
+                        placeholder="Введите текст"
+                        required
+                    ></textarea>
+                    <button class="game-page__button" type="submit">Перевернуть</button>
+                </form>
+
+                <p class="game-page__output"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">Все права защищены.</p>
+    </footer>
+
+    <script src="js/reverse-text.js"></script>
+</body>
+</html>

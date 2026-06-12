@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Угадай число | Мини-игры</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="game-page">
+        <div class="game-page__container">
+            <a href="index.html#game-1" class="game-page__back">← Назад к играм</a>
+
+            <div class="game-page__card">
+                <h1 class="game-page__title">Угадай число</h1>
+                <p class="game-page__description">
+                    Компьютер загадал число от 1 до 100. Попробуйте угадать его
+                    за минимальное количество попыток — после каждой попытки вы получите подсказку.
+                </p>
+
+                <form class="game-page__form">
+                    <input
+                        class="game-page__input"
+                        type="number"
+                        min="1"
+                        max="100"
+                        placeholder="Введите число от 1 до 100"
+                        required
+                    >
+                    <button class="game-page__button" type="submit">Проверить</button>
+                </form>
+
+                <p class="game-page__message"></p>
+                <p class="game-page__attempts">Попыток: 0</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">Все права защищены.</p>
+    </footer>
+
+    <script src="js/guess-number.js"></script>
+</body>
+</html>

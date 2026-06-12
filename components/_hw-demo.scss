@@ -1,0 +1,35 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.hw-task {
+  gap: $gap-tiny;
+
+  &__heading,
+  &__change-heading {
+    font-family: $font-family;
+    font-weight: $font-bold;
+    font-size: $card-title-size;
+    color: $dark-text;
+  }
+
+  &__paragraph,
+  &__plain {
+    font-family: $font-family;
+    font-size: $regular-text-size;
+    color: $dark-text;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  .description {
+    font-family: $font-family;
+    font-size: $regular-text-size;
+    color: $dark-text;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+}

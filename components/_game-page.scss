@@ -1,0 +1,206 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.game-page {
+  background: url('../img/background_games.png') no-repeat center center / cover;
+  min-height: calc(100vh - 150px);
+  padding: 80px 20px 120px;
+
+  @include mobile {
+    padding: 60px 20px;
+  }
+
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-medium;
+  }
+
+  &__back {
+    font-family: $font-family;
+    font-weight: $font-semibold;
+    font-size: $small-text-size;
+    color: $white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__card {
+    background: $white;
+    border-radius: $border-radius-card;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-extra-small;
+
+    @include mobile {
+      padding: 32px;
+    }
+  }
+
+  &__title {
+    font-family: $font-family;
+    font-weight: $font-bold;
+    font-size: $h3-size;
+    line-height: $h3-lineheight;
+    color: $dark-text;
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  &__description {
+    font-family: $font-family;
+    font-weight: $font-regular;
+    font-size: $regular-text-size;
+    line-height: $text-lineheight;
+    color: $dark-text;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-tiny;
+    margin-top: $gap-tiny;
+
+    &--column {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    flex: 1;
+    min-width: 200px;
+    height: $button-height;
+    padding: 16px 24px;
+    border: 1px solid $black;
+    border-radius: $border-radius-button;
+    font-family: $font-family;
+    font-weight: $font-regular;
+    font-size: $regular-text-size;
+    color: $dark-text;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: $footer-bg;
+    }
+
+    @include mobile {
+      font-size: 18px;
+      min-width: 100%;
+    }
+  }
+
+  &__button {
+    @include button-style;
+    width: auto;
+    min-width: $button-width;
+    border: none;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__message {
+    font-family: $font-family;
+    font-weight: $font-medium;
+    font-size: $regular-text-size;
+    line-height: $text-lineheight;
+    color: $dark-text;
+    min-height: 32px;
+
+    @include mobile {
+      font-size: 18px;
+    }
+
+    &--success {
+      color: #2e7d32;
+    }
+
+    &--error {
+      color: #c62828;
+    }
+  }
+
+  &__attempts {
+    font-family: $font-family;
+    font-weight: $font-regular;
+    font-size: $small-text-size;
+    color: $dark-text;
+    opacity: 0.7;
+  }
+
+  &__task {
+    font-family: $font-family;
+    font-weight: $font-bold;
+    font-size: $h3-size;
+    line-height: $h3-lineheight;
+    color: $dark-text;
+    text-align: center;
+    padding: $gap-tiny 0;
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  &__output {
+    font-family: $font-family;
+    font-weight: $font-medium;
+    font-size: $regular-text-size;
+    line-height: $text-lineheight;
+    color: $dark-text;
+    background: $light-gray;
+    border-radius: $border-radius-number;
+    padding: 24px;
+    word-break: break-word;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 16px 24px;
+    border: 1px solid $black;
+    border-radius: $border-radius-card;
+    font-family: $font-family;
+    font-weight: $font-regular;
+    font-size: $regular-text-size;
+    color: $dark-text;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: $footer-bg;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-tiny;
+    margin-top: $gap-tiny;
+  }
+}

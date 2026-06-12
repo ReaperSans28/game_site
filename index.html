@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Мини-игры | Добро пожаловать</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="welcome" id="welcome">
+        <div class="welcome__content">
+            <h1 class="welcome__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
+            <p class="welcome__text">
+                Тебе предстоит пройти несколько увлекательных игр. 
+                Если готов, нажимай <span>«Поехали!»</span> и <span>приступай</span>.
+            </p>
+            <a href="#about" class="welcome__button">Поехали!</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="about__text">
+                <h2 class="about__title">Об играх</h2>
+                <p class="about__description">
+                    В моей коллекции представлено 6 игр на разные темы.<br>
+                    Игры несложные — в них может поиграть каждый.<br>
+                    Все игры доступны для пользования.
+                </p>
+            </div>
+            <div class="about__cards">
+                <a href="guess-number.html" class="about__card">
+                    <article class="about__card-inner">
+                        <img src="img/game_cover_1.png" alt="Угадай число" class="about__card-image">
+                        <div class="about__card-content">
+                            <div class="about__card-number">Игра №1</div>
+                            <h3 class="about__card-title">Угадай число</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="arithmetic.html" class="about__card">
+                    <article class="about__card-inner">
+                        <img src="img/game_cover_2.png" alt="Простая арифметика" class="about__card-image">
+                        <div class="about__card-content">
+                            <div class="about__card-number">Игра №2</div>
+                            <h3 class="about__card-title">Простая <br>арифметика</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="reverse-text.html" class="about__card">
+                    <article class="about__card-inner">
+                        <img src="img/game_cover_3.png" alt="Переверни текст" class="about__card-image">
+                        <div class="about__card-content">
+                            <div class="about__card-number">Игра №3</div>
+                            <h3 class="about__card-title">Переверни текст</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="rps.html" class="about__card">
+                    <article class="about__card-inner">
+                        <img src="img/game_cover_4.png" alt="Камень, ножницы, бумага" class="about__card-image">
+                        <div class="about__card-content">
+                            <div class="about__card-number">Игра №4</div>
+                            <h3 class="about__card-title">Камень, ножницы, <br>бумага</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="quiz.html" class="about__card">
+                    <article class="about__card-inner">
+                        <img src="img/game_cover_5.png" alt="Простая викторина" class="about__card-image">
+                        <div class="about__card-content">
+                            <div class="about__card-number">Игра №5</div>
+                            <h3 class="about__card-title">Простая <br>викторина</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="#game-6" class="about__card">
+                    <article class="about__card-inner">
+                        <img src="img/game_cover_6.png" alt="Генератор случайных цветов" class="about__card-image">
+                        <div class="about__card-content">
+                            <div class="about__card-number">Игра №6</div>
+                            <h3 class="about__card-title">Генератор <br>случайных <br>цветов</h3>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="games" id="games">
+        <div class="games__container">
+            <h2 class="games__title">Мини-игры</h2>
+            <div class="games__cards">
+                <article class="games__card" id="game-1">
+                    <div class="games__card-inner">
+                        <div class="games__card-text">
+                            <h3 class="games__card-title">Угадай число</h3>
+                            <p class="games__card-description">
+                                Компьютер загадывает число от 1 до 100, 
+                                а вам нужно его отгадать за минимальное количество попыток.
+                            </p>
+                            <a href="guess-number.html" class="games__card-button">Играть!</a>
+                        </div>
+                        <div class="games__card-image">
+                            <img src="img/game_cover_1.png" alt="Угадай число">
+                        </div>
+                    </div>
+                </article>
+                <article class="games__card" id="game-2">
+                    <div class="games__card-inner">
+                        <div class="games__card-text">
+                            <h3 class="games__card-title">Простая арифметика</h3>
+                            <p class="games__card-description">
+                                Решите простые арифметические примеры на сложение, 
+                                вычитание, умножение и деление.
+                            </p>
+                            <a href="arithmetic.html" class="games__card-button">Играть!</a>
+                        </div>
+                        <div class="games__card-image">
+                            <img src="img/game_cover_2.png" alt="Простая арифметика">
+                        </div>
+                    </div>
+                </article>
+                <article class="games__card" id="game-3">
+                    <div class="games__card-inner">
+                        <div class="games__card-text">
+                            <h3 class="games__card-title">Переверни текст</h3>
+                            <p class="games__card-description">
+                                Введите любую фразу, и программа покажет её задом наперёд.
+                            </p>
+                            <a href="reverse-text.html" class="games__card-button">Играть!</a>
+                        </div>
+                        <div class="games__card-image">
+                            <img src="img/game_cover_3.png" alt="Переверни текст">
+                        </div>
+                    </div>
+                </article>
+                <article class="games__card" id="game-4">
+                    <div class="games__card-inner">
+                        <div class="games__card-text">
+                            <h3 class="games__card-title">Камень, ножницы, бумага</h3>
+                            <p class="games__card-description">
+                                Классическая игра против компьютера. 
+                                Выберите свой вариант и узнайте результат.
+                            </p>
+                            <a href="rps.html" class="games__card-button">Играть!</a>
+                        </div>
+                        <div class="games__card-image">
+                            <img src="img/game_cover_4.png" alt="Камень, ножницы, бумага">
+                        </div>
+                    </div>
+                </article>
+                <article class="games__card" id="game-5">
+                    <div class="games__card-inner">
+                        <div class="games__card-text">
+                            <h3 class="games__card-title">Простая викторина</h3>
+                            <p class="games__card-description">
+                                Ответьте на 10 вопросов из разных областей знаний 
+                                и проверьте свою эрудицию.
+                            </p>
+                            <a href="quiz.html" class="games__card-button">Играть!</a>
+                        </div>
+                        <div class="games__card-image">
+                            <img src="img/game_cover_5.png" alt="Простая викторина">
+                        </div>
+                    </div>
+                </article>
+                <article class="games__card" id="game-6">
+                    <div class="games__card-inner">
+                        <div class="games__card-text">
+                            <h3 class="games__card-title">Генератор случайных цветов</h3>
+                            <p class="games__card-description">
+                                Нажмите кнопку, чтобы получить случайный цвет 
+                                в формате HEX и увидеть его на экране.
+                            </p>
+                            <a href="#" class="games__card-button">Играть!</a>
+                        </div>
+                        <div class="games__card-image">
+                            <img src="img/game_cover_6.png" alt="Генератор случайных цветов">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

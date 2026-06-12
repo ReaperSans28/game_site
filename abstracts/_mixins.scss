@@ -1,0 +1,56 @@
+@import 'variables';
+
+@mixin mobile {
+  @media (max-width: #{$mobile-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin button-style {
+  display: inline-block;
+  width: $button-width;
+  height: $button-height;
+  padding: $button-padding;
+  background-color: $black;
+  color: $white;
+  border-radius: $border-radius-button;
+  font-family: $font-family;
+  font-weight: $font-semibold;
+  font-size: $button-text-size;
+  line-height: $button-lineheight;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+    border: 1px solid $black;
+  }
+}
+
+@mixin section-title {
+  font-family: $font-family;
+  font-weight: $font-bold;
+  font-size: $h1-size;
+  line-height: $h1-lineheight;
+  color: $white;
+  margin: 0;
+}
+
+@mixin about-card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+}
